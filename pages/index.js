@@ -78,18 +78,18 @@ export default function Home() {
 
         <section id="contact" className="my-10">
           <h3 className="text-2xl font-bold text-indigo-800 mb-6">Contáctanos</h3>
-          {!submitted ? (
-            <form onSubmit={handleSubmit} className="space-y-4">
-              <input name="name" placeholder="Tu nombre" value={formData.name} onChange={handleChange} required className="w-full p-3 border rounded" />
-              <input name="email" type="email" placeholder="Tu correo" value={formData.email} onChange={handleChange} required className="w-full p-3 border rounded" />
-              <textarea name="message" placeholder="Tu mensaje" value={formData.message} onChange={handleChange} required className="w-full p-3 border rounded h-32" />
-              <button type="submit" className="bg-indigo-600 text-white px-6 py-3 rounded hover:bg-indigo-700">Enviar mensaje</button>
-              {errorMsg && <p className="text-red-500">{errorMsg}</p>}
-            </form>
-          ) : (
-            <p className="text-green-600 font-semibold">Mensaje enviado correctamente. Te contactaremos pronto.</p>
-          )}
-        </section>
+          <form
+    action="https://formspree.io/f/mrbkbgkd"
+    method="POST"
+    className="space-y-4"
+  >
+    <input name="name" type="text" placeholder="Tu nombre" required className="w-full p-3 border rounded" />
+    <input name="email" type="email" placeholder="Tu correo" required className="w-full p-3 border rounded" />
+    <textarea name="message" placeholder="Tu mensaje" required className="w-full p-3 border rounded h-32" />
+    <button type="submit" className="bg-indigo-600 text-white px-6 py-3 rounded hover:bg-indigo-700">Enviar mensaje</button>
+  </form>
+</section>
+
       </main>
 
       <a href="https://wa.me/51981831698" target="_blank" className="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg text-xl">💬</a>
