@@ -60,6 +60,18 @@
     @media(max-width:1050px){.bio-grid{column-gap:35px}.bio-visual{min-height:585px}.bio-credentials{gap:10px}.bio-credential strong{font-size:15px}}
     @media(max-width:820px){.bio-grid{grid-template-columns:minmax(0,1fr);gap:24px}.bio-intro{grid-row:1;grid-column:1;align-self:auto}.bio-visual{grid-row:2;grid-column:1;align-self:auto;min-height:0;aspect-ratio:1.12;max-width:680px;width:100%}.bio-details{grid-row:3;grid-column:1}.bio-intro .section-title{font-size:clamp(34px,6vw,48px);margin-bottom:0}.bio-details p{max-width:680px}}
     @media(max-width:520px){.bio-intro .section-title{font-size:37px;line-height:1.1}.bio-visual{aspect-ratio:.97;min-height:350px;border-radius:20px}.bio-photo{object-position:76% 50%}.bio-photo-tag{bottom:20px;left:21px;right:16px}.bio-photo-tag strong{font-size:16px}.bio-photo-tag span{font-size:9px}.bio-details p{font-size:14.5px}.bio-credentials{grid-template-columns:1fr;gap:12px;margin-top:23px;padding-top:17px}.bio-credential{padding:0 0 11px;border-right:0!important;border-bottom:1px solid #dce2dc}.bio-credential strong{font-size:18px}.bio-credential span{margin-top:3px;font-size:12px}.bio-actions{align-items:stretch;flex-direction:column}.bio-actions .btn{width:100%}.bio-actions .bio-mail{text-align:center}}
+
+  /* Preferencias de cookies: Analytics no se carga sin consentimiento. */
+  .cookie-panel[hidden]{display:none!important}
+  .cookie-panel{position:fixed;left:20px;bottom:20px;z-index:1000;max-width:min(520px,calc(100vw - 40px));padding:20px 22px;background:#fff;border:1px solid #dce4df;border-radius:16px;box-shadow:0 12px 42px #1a2d3330;color:var(--ink)}
+  .cookie-panel strong{font-size:16px}.cookie-panel p{font-size:13px;line-height:1.55;color:var(--text);margin:8px 0 15px}
+  .cookie-panel a{color:var(--violet);text-decoration:underline;text-underline-offset:3px}
+  .cookie-actions{display:flex;gap:10px;flex-wrap:wrap}
+  .cookie-actions button{border:1px solid #bec9c3;border-radius:9px;cursor:pointer;padding:11px 16px;font-size:13px;font-weight:700;background:#fff;color:var(--ink)}
+  .cookie-actions button.accept{border-color:var(--ink);background:var(--ink);color:#fff}
+  .cookie-settings{background:none;border:0;padding:0;color:inherit;font:inherit;text-decoration:underline;cursor:pointer;text-underline-offset:3px}
+  @media(max-width:600px){.cookie-panel{left:12px;right:12px;bottom:12px;max-width:none;padding:16px 18px}.cookie-actions button{flex:1}}
+
 </style>
 </head>
 <body>
@@ -107,12 +119,73 @@
       </div></div></section>
     <section class="closing" id="contacto"><div class="container closing-content"><div><div class="eyebrow">EL PRIMER PASO</div><h2>¿Qué está impidiendo<br>que eso avance?</h2><p>No necesitas tener el problema perfectamente definido. Podemos conversar y ver si existe una forma concreta en la que pueda ayudar.</p></div><a class="btn btn-lime" href="https://wa.me/51981831698?text=Hola%20Eduardo%2C%20vi%20Optimizta%20y%20quisiera%20conversar%20sobre%20una%20situaci%C3%B3n%20de%20mi%20empresa." target="_blank" rel="noopener noreferrer">Hablemos por WhatsApp <span aria-hidden="true">↗</span></a></div></section>
   </main>
-  <footer><div class="container"><div class="footer-grid"><div><div class="footer-brand">optimizta<span style="color:var(--lime)">.</span></div><div class="footer-sub">Claridad para decidir. Criterio para avanzar.</div></div><div class="footer-links"><a href="#problemas">Qué resolvemos</a><a href="#enfoque">Cómo ayudo</a><a href="mailto:edavalos@optimizta.com">edavalos@optimizta.com</a></div></div><div class="footer-bottom"><span>© <span id="year">2026</span> Optimizta · Eduardo Dávalos · Lima, Perú</span><span>Consultoría ejecutiva práctica · Lima, Perú</span></div></div></footer>
+  <footer><div class="container"><div class="footer-grid"><div><div class="footer-brand">optimizta<span style="color:var(--lime)">.</span></div><div class="footer-sub">Claridad para decidir. Criterio para avanzar.</div></div><div class="footer-links"><a href="#problemas">Qué resolvemos</a><a href="#enfoque">Cómo ayudo</a><a href="mailto:edavalos@optimizta.com">edavalos@optimizta.com</a></div></div><div class="footer-bottom"><span>© <span id="year">2026</span> Optimizta · Eduardo Dávalos · Lima, Perú</span><span>Consultoría ejecutiva práctica · Lima, Perú · <a href="/privacidad.html">Privacidad y cookies</a> <button type="button" class="cookie-settings" id="cookieSettings">Preferencias de cookies</button></span></div></div></footer>
   <a class="whatsapp-float" href="https://wa.me/51981831698?text=Hola%20Eduardo%2C%20vi%20Optimizta%20y%20quisiera%20conversar%20sobre%20una%20situaci%C3%B3n%20de%20mi%20empresa." target="_blank" rel="noopener noreferrer" aria-label="Conversar por WhatsApp"><svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16 .6A15.4 15.4 0 0 0 2.9 24.2L.6 31.4l7.4-2.1A15.4 15.4 0 1 0 16 .6Zm0 28.1a12.6 12.6 0 0 1-6.4-1.75l-.45-.27-4.4 1.25 1.3-4.25-.3-.47a12.6 12.6 0 1 1 10.25 5.49Zm6.97-9.45c-.38-.19-2.2-1.09-2.55-1.21-.34-.12-.58-.19-.83.19-.24.37-.95 1.2-1.16 1.45-.22.25-.43.28-.8.09-.38-.19-1.6-.6-3.05-1.92-1.12-1-1.88-2.24-2.1-2.62-.22-.37-.02-.57.17-.76.17-.17.38-.44.57-.66.19-.22.25-.38.38-.63.12-.25.06-.47-.03-.66l-1.14-2.76c-.3-.71-.6-.62-.83-.63h-.7c-.24 0-.64.09-.98.47-.34.38-1.29 1.26-1.29 3.07 0 1.8 1.32 3.56 1.5 3.81.2.25 2.6 3.95 6.3 5.54.88.38 1.57.61 2.11.78.9.29 1.72.25 2.37.15.72-.11 2.21-.9 2.52-1.77.31-.87.31-1.62.22-1.77-.1-.16-.35-.25-.73-.44Z"/></svg></a>
   <script>
     const menu=document.getElementById('menuToggle');const nav=document.getElementById('navLinks');menu.addEventListener('click',()=>{const open=menu.getAttribute('aria-expanded')!=='true';menu.setAttribute('aria-expanded',String(open));menu.setAttribute('aria-label',open?'Cerrar menú':'Abrir menú');nav.dataset.open=String(open)});nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{menu.setAttribute('aria-expanded','false');nav.dataset.open='false'}));
     const focus={decision:{label:'DECISIONES',title:'De opiniones cruzadas a una decisión posible.',text:'Estructuramos el problema, evaluamos alternativas y aclaramos qué hace falta decidir.'},priority:{label:'PRIORIDADES',title:'De todo urgente a lo realmente importante.',text:'Ponemos criterios sobre la mesa para elegir qué debe avanzar primero y qué puede esperar.'},flow:{label:'COORDINACIÓN',title:'De tareas aisladas a un flujo más claro.',text:'Revisamos las interdependencias para identificar dónde se pierde tiempo y cómo mejorar la coordinación.'}};
     document.querySelectorAll('[data-focus]').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('[data-focus]').forEach(b=>b.setAttribute('aria-selected',String(b===btn)));const data=focus[btn.dataset.focus];document.getElementById('focusLabel').textContent=data.label;document.getElementById('focusTitle').textContent=data.title;document.getElementById('focusText').textContent=data.text}));document.getElementById('year').textContent=new Date().getFullYear();
   </script>
+
+  <aside class="cookie-panel" id="cookiePanel" aria-labelledby="cookieTitle" hidden>
+    <strong id="cookieTitle">Tu privacidad importa</strong>
+    <p>Utilizamos Google Analytics para conocer las visitas y clics de contacto. Solo se activa si aceptas las cookies de análisis. Puedes cambiar tu decisión cuando quieras. <a href="/privacidad.html">Más información</a>.</p>
+    <div class="cookie-actions">
+      <button type="button" id="cookieReject">Rechazar</button>
+      <button type="button" id="cookieAccept" class="accept">Aceptar estadísticas</button>
+    </div>
+  </aside>
+  <script>
+  (function(){
+    'use strict';
+    var analyticsId='G-Q3R5H0VB26', storageKey='optimizta_analytics_consent_v1', active=false;
+    var banner=document.getElementById('cookiePanel');
+    function getChoice(){try{return localStorage.getItem(storageKey)}catch(e){return null}}
+    function saveChoice(value){try{localStorage.setItem(storageKey,value)}catch(e){}}
+    function showBanner(){banner.hidden=false}
+    function hideBanner(){banner.hidden=true}
+    function cleanAnalyticsCookies(){
+      document.cookie.split(';').forEach(function(item){
+        var name=item.split('=')[0].trim();
+        if(/^_ga(?:_|$)/.test(name)){
+          ['',';domain=optimizta.com',';domain=.optimizta.com'].forEach(function(domain){
+            document.cookie=name+'=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/'+domain+';SameSite=Lax';
+          });
+        }
+      });
+    }
+    function startAnalytics(){
+      if(active)return;
+      active=true;
+      window.dataLayer=window.dataLayer||[];
+      window.gtag=function(){window.dataLayer.push(arguments)};
+      window.gtag('consent','default',{analytics_storage:'denied',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied'});
+      window.gtag('consent','update',{analytics_storage:'granted'});
+      window.gtag('js',new Date());
+      window.gtag('config',analyticsId,{allow_google_signals:false,allow_ad_personalization_signals:false});
+      var script=document.createElement('script');
+      script.async=true;
+      script.src='https://www.googletagmanager.com/gtag/js?id='+encodeURIComponent(analyticsId);
+      document.head.appendChild(script);
+    }
+    document.getElementById('cookieAccept').addEventListener('click',function(){saveChoice('accepted');hideBanner();startAnalytics()});
+    document.getElementById('cookieReject').addEventListener('click',function(){
+      var wasActive=active;
+      saveChoice('rejected');
+      hideBanner();
+      if(wasActive){window.gtag('consent','update',{analytics_storage:'denied'});cleanAnalyticsCookies();location.reload()}
+    });
+    document.getElementById('cookieSettings').addEventListener('click',showBanner);
+    document.querySelectorAll('a[href*="wa.me/"]').forEach(function(link){
+      link.addEventListener('click',function(){
+        if(!active || typeof window.gtag!=='function')return;
+        var area=link.closest('section');
+        window.gtag('event','whatsapp_click',{contact_location:link.closest('header')?'cabecera':link.classList.contains('whatsapp-float')?'flotante':area&&area.id?area.id:'pagina'});
+      });
+    });
+    if(getChoice()==='accepted')startAnalytics(); else if(getChoice()!=='rejected')showBanner();
+  })();
+  </script>
+
 </body>
 </html>
